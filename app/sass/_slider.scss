@@ -1,0 +1,45 @@
+.slider {
+    background-color: $grey_bg;
+    padding-top: 30px;
+    h2 {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main_reg;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 40px;
+    }
+    &__box {
+        display: flex; 
+        justify-content: center;  
+        align-items: center; 
+        height: 90px;
+        background-color:  #FFFFFF;
+        border-radius: 12px;
+        padding: 10px;
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .slider {
+        &__item {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        &__box, 
+        &__box:not(:first-child) {
+            display: flex;
+        }
+    }
+}

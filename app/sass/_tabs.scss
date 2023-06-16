@@ -1,0 +1,104 @@
+.tabs {
+    &__list {
+        padding-bottom: 30px;
+        margin: 0 -15px;
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            }
+        }
+        li {
+            padding-left: 22px;
+        }
+        button {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            color: $grey_text;
+            background-color: transparent;
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+            &.active {
+                color: #F0145A;
+            }
+        }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        margin-bottom: auto;
+        h3 {
+            border-top: 4px solid  rgba(255, 255, 255, 0.3); 
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .tabs {
+        &__list {
+            margin-right: -60px;
+            padding-bottom: 60px;
+            button {
+                font-size: 38px;
+                line-height: 46px;
+            }
+        }
+        &__content {
+            padding: 0;
+            h3 {
+                font-size: 30px;
+                line-height: 37px;
+                padding-top: 60px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .tabs {
+        &__box {
+            display: flex;
+        }  
+        &__list {
+            flex-direction: column;
+            align-items: flex-end;
+            width: 450px;
+            margin: 0;
+            padding-right: 60px;
+            padding-bottom: 0;
+            border-right: 4px solid  rgba(255, 255, 255, 0.3); 
+            li:not(:last-child) {
+                padding-bottom: 30px;
+            }
+        }
+        &__content {
+            width: 100%;
+            padding: 0 15px 0 62px;
+            h3 {
+                border-top: none; 
+                padding: 0 0 30px 0;
+            }
+        }
+    }
+}
+

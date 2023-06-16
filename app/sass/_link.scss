@@ -1,0 +1,14 @@
+.link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $reg_blue;
+    padding-bottom: 10px;
+    svg {
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,10 @@
+.main {
+    padding-top: 52px;
+    background: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding-top: 80px;
+    }
+}

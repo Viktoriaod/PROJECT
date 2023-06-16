@@ -1,0 +1,94 @@
+.about {
+    padding: 28px 15px 30px;
+    &__text {
+        padding-bottom: 30px;
+        h1 {
+            padding-bottom: 28px;
+            font-size: 30px;
+            line-height: 37px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        p {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: #000000;
+        }
+    }
+    &__list {
+        border-left: 4px solid $grey_sep;
+    }
+    &__list-item {
+        padding-left: 30px;
+        p {
+            text-decoration: none;
+            list-style: none;
+            font-size: 36px;
+            line-height: 44px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            padding-bottom: 10px;
+            margin-bottom: auto;
+        }
+        h3 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $main_reg;
+        }
+    }
+    &__list-item:not(:last-child) {
+        padding-bottom: 40px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .about {
+        padding: 65px 0;
+        h1 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        &__text {
+            padding-right: 30px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about {
+        padding: 32px 15px;
+        &__wrapper {
+            display: flex;
+        }
+        &__text {
+            display: block;
+            width: 57%;
+        }
+        &__list {
+            display: block;
+            width: 43%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        padding: 32px 15px;
+        &__text {
+            width: 64%;
+            padding-right: 40px;
+        }
+        &__list {
+            width: 36%;
+        }
+    }
+}

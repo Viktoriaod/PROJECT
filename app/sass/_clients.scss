@@ -1,0 +1,91 @@
+.clients {
+    padding-top: 30px;
+    h2 {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main_reg;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    &__box {
+        display: grid;
+        background-color: #FD9339;
+    }
+    &__item {
+        height: 120px;
+        display: flex; 
+        justify-content: center;  
+        align-items: center; 
+        &--1 {            
+        background: #1C4280;
+        }
+        &--2 {
+        background: #143646;
+        }
+        &--3 {
+        background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+        }
+        &--4 {
+        background: #9E4DC3;
+        }
+        &--5 {
+        background: #FD9339;
+        }
+        &--6 {
+        background: #E2E2E4;
+        }
+        &--7 {
+        background: #C71C36;
+        display: none;
+        }
+        &--8 {
+        background: #DCF3F9;
+        display: none;
+        }
+        &--9 {
+        background: #EAEAEA;
+        display: none;
+        }
+        &--10 {
+        background: #282240;
+        display: none;
+        }
+        &--11 {
+        background: #1D4568;
+        display: none;
+        }
+        &--12 {
+        background: #000000;
+        display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .clients {
+        &__box {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+        &__item {
+            &--7,
+            &--8,
+            &--9,
+            &--10,
+            &--11,
+            &--12 {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .clients {
+        &__box {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}

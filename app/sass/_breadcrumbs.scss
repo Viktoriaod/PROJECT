@@ -1,0 +1,27 @@
+.breadcrumbs {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $main_reg;
+    display: inline-flex;
+    align-items: center;
+    &::before {
+        content: '';
+        background-image: url(../img/slash.svg);
+        width: 12px;
+        height: 26px;
+        margin-right: 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .breadcrumbs {
+        font-size: 36px;
+        line-height: 44px;
+        &::before {
+            background-size: 21px 47px;
+            width: 21px;
+            height: 47px;
+        }
+    }
+}

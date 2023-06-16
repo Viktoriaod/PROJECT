@@ -1,0 +1,45 @@
+.lang {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 1px;   
+    li:not(:last-child) {
+        padding: 5px 7px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 5px 7px;
+        }
+    }
+    li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        &.active {
+            background-color: #F0145A;
+            padding: 5px 7px;
+            border-radius: 8px;
+        }
+    }  
+    &--on-white {
+        li a {
+            color: $grey_text;
+        }
+        &.active {
+            background-color: #F0145A;
+            padding: 5px 7px;
+            border-radius: 8px;
+        }
+    } 
+    &--on-white {
+        li {
+            &:hover:not(:last-child) {
+                background-color: $grey_bg;          
+            }
+       }
+    }
+}
+

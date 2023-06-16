@@ -1,0 +1,37 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
+    "sass": "^1.58.0",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard-scss": "^7.0.1"
+  },
+  "scripts": {
+    "stylelint": "npx stylelint \"app/sass/**/*.scss\"",
+    "test": "npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
+}

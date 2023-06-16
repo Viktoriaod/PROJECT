@@ -1,0 +1,23 @@
+.logo-box {
+    display: flex;
+    align-items: center;
+    &__link img {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo-box {
+        &__link img {
+            width: 130px;
+            height: auto;
+        }
+    }   
+}
+
+@media (min-width: 992px) {
+    .logo-box {
+        grid-row: 1 / -1;
+        grid-column: 1;
+    }
+}

@@ -1,0 +1,99 @@
+.team {
+    &__box {
+        font-size: 0;
+        margin: 0 -15px;
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 30px;
+        
+    }
+    &__pic {  
+        width: 100%; 
+        img {
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+            background: $grey_alt;
+            border-radius: 12px 12px 0px 0px;
+         }
+    }
+    &__text {
+        background-color: $grey_bg;
+        padding: 30px;
+        font-size: 0;
+        width: 100%;
+        word-wrap: break-word;
+        border-radius: 0px 0px 12px 12px;
+    }
+    &__text-main {
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-bottom: 30px;
+        margin-bottom: auto;
+    } 
+    &__textname {
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey_text;
+        padding-bottom: 6px;
+        &--small {
+            font-size: 14px;
+            line-height: 22px;
+            color: $grey_text;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .team {
+        &__list {
+            padding: 0 15px;
+        }
+        &__text-main {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+} 
+
+@media (min-width: 992px) {
+    .team {
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__list {
+            padding: 0 30px;
+        }
+        &__pic {  
+            width: 44.25%; 
+            img {
+                height: 100%;
+                border-radius: 12px 0px 0px 12px;
+            } 
+        }
+        &__text {
+            width: 55.75%;
+            border-radius: 0px 12px 12px 0px;
+        }
+     }
+} 
+
+@media (min-width: 1200px) {
+    .team {
+        &__pic {  
+            width: 30%;
+        }
+        &__text {
+            width: 70%;
+        }
+    }
+}
+    

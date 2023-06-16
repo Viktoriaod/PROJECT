@@ -1,0 +1,45 @@
+.gradient {
+    background: url(../img/h-gradient.svg) no-repeat top center,
+    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+    &::after {
+        content: '';
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+    }
+    &::before {
+        content: '';
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .gradient {
+        background-size: 893px 1024px, cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .gradient {
+        background-size: 670px 768px, cover;
+    }  
+}
+
+@media (min-width: 1200px) {
+    .gradient {
+        background-size: 697px 799px, cover;
+    }   
+}

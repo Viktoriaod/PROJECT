@@ -1,0 +1,27 @@
+.mail {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: $reg_blue;
+    padding-bottom: 30px;
+    &:hover {
+        color: $red;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .mail {
+        padding-bottom: 0;
+        &::before {
+            content:'';
+            margin: 6px;
+            border-radius: 50px;
+            width: 6px;
+            height: 6px;
+            background: $grey_text;
+        }
+    }
+}

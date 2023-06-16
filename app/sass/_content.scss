@@ -1,0 +1,26 @@
+.content {
+    padding-top: 30px;
+    background-color: $grey_bg;
+    h2 {
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding-bottom: 30px;
+    }
+    &__title {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        h2 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}

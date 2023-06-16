@@ -1,0 +1,40 @@
+.link-circle {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;   
+    &__btn {
+        margin-right: 15px;
+        width: 16px;
+        height: 16px;
+        background: $reg_blue;
+        opacity: 0.2;
+        border-radius: 50%;
+        outline: none; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &--on-white {
+        padding-bottom: 30px;
+        border-bottom: 2px solid #E6E6F0;
+    }
+}
+
+@media (min-width: 768px) {
+    .link-circle {
+        &__btn {
+            &--4,
+            &--5,
+            &--6 {
+                display: none;
+            }
+        }
+    }
+}

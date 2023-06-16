@@ -1,0 +1,50 @@
+.title {
+    padding-bottom: 55px;
+    padding-top: 128px;
+    &__main {
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0 60px 159px 90px;
+    }
+    &__scroll {
+        display: block;
+        text-align: center;  
+        cursor: pointer;  
+    }
+    &__scroll:hover circle,
+    &__scroll:hover path{
+        stroke: $red; 
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        padding-top: 273px;
+        padding-bottom: 85px;
+        &__main {
+            padding: 0 0 417px 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .title {
+        padding-top: 212px;
+        padding-bottom: 100px;
+        &__main {
+            padding-bottom: 289px;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .title {
+        padding-top: 230px;
+        &__main {
+            padding-bottom: 305px;
+        }
+    }   
+}

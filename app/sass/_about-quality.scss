@@ -1,0 +1,48 @@
+.about-quality {
+    padding: 30px 15px 60px;
+    p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        padding-bottom: 30px; 
+        margin-bottom: auto;       
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-quality {
+        padding: 30px 0 60px;
+        h2 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about-quality {
+        padding: 40px 15px 30px;
+        &__box {
+            display: flex;
+        }
+        &__text {
+            display: block;
+            width: 60%;
+            padding-right: 60px;
+        }
+        &__title {
+            display: block;
+            width: 40%;
+        }
+    }
+}

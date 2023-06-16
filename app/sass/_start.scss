@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body { 
+    font-family: 'Montserrat', Arial, sans-serif;  
+    font-weight: 700;  
+    font-size: 18px;  
+    color: #FFFFFF;
+    min-width: 375px;
+}  
+  
+.container {
+    max-width: 1350px; 
+    min-width: 375px; 
+    margin: 0 auto;  
+    padding: 0 15px; 
+}
+
+.img-responsive {  
+    max-width: 100%;  
+    height: fit-content;  
+}
+ 
+.visually-hidden { 
+    position: absolute;  
+    width: 1px;  
+    height: 1px;  
+    margin: -1px;  
+    border: 0;  
+    padding: 0;  
+    clip: rect(0 0 0 0 ); 
+    overflow: hidden; 
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 60px; 
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 30px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 60px; 
+    }
+    .container--small {
+        max-width: 1180px;
+        padding: 0 30px; 
+    }
+}
+
+

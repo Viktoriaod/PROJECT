@@ -1,0 +1,41 @@
+.fb {
+    display: none; 
+    &--footer {
+        display: flex;
+        svg path {
+            fill: $reg_blue;
+        }
+        svg path:hover {
+            fill: $red;
+            }
+        padding-bottom: 10px;
+    }
+    &--on-white {
+        svg path {
+            fill: $grey_text;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .fb {
+        display: flex;
+        align-items: center;
+        svg path:hover {
+            fill: $red;
+            }
+        &::before {
+            content:'';
+            margin: 6px;
+            border-radius: 100px;
+            width: 6px;
+            height: 6px;
+            background: #E6E6F0;
+        }
+        &--footer {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
