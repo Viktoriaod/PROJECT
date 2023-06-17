@@ -1,0 +1,9 @@
+.about-wrapper {
+    display: none;
+}
+  
+  @media (min-width: 992px) {
+    .about-wrapper {
+      display: flex;
+    }
+}

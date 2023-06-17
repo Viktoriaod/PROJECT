@@ -1417,4 +1417,16 @@ html {
 .border {
   border-bottom: 2px solid #E6E6F0;
 }
+
+.about-wrapper {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .about-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 /*# sourceMappingURL=style.css.map */
