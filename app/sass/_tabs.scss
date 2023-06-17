@@ -28,7 +28,7 @@
             white-space: nowrap;
             cursor: pointer;
             &.active {
-                color: #F0145A;
+                color: $red;
             }
         }
     &__content {
